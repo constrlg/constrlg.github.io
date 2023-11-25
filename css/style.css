@@ -241,6 +241,11 @@ hr {
   padding-block: 150px;
 }
 
+.work .work_content .work_title 
+{
+  font-size: var(--text-medium);
+}
+
 .work .work_content .work_list 
 {
   display: grid;
