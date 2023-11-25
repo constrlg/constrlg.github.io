@@ -69,6 +69,23 @@ hr {
   font-weight: var(--bold);
 }
 
+.view_work_link {
+  color: var(--color1);
+  font-size: var(--text-small);
+  font-weight: var(--bold);
+  margin-top: 10px;
+  display: inline-block;
+}
+  
+.see_more_link {
+  color: var(--color1);
+  font-size: var(--text-small);
+  font-weight: var(--bold);
+  margin-top: 20px;
+  float: right;
+}
+
+
 /* NAV */
 .nav {
   position: fixed;
@@ -194,98 +211,42 @@ hr {
   padding-block: 150px;
 }
 
-.works .works_content .works_categories_list {
+.works .works_content .works_list {
   display: grid;
   row-gap: 100px;
-}
-
-.works .works_content .works_categories_list .works_categories_item {
   max-width: 500px;
-  margin: 0 auto;
-}
-
-.works .works_content .works_categories_list .works_web_design,
-.works .works_content .works_categories_list .works_app_design,
-.works .works_content .works_categories_list .works_front_end,
-.works .works_content .works_categories_list .works_graphic_design {
-  max-width: unset;
+  margin-inline: auto;
 }
 
 .works
   .works_content
-  .works_categories_list
-  .works_categories_item
-  .works_categories_item_title {
+  .works_list
+  .works_category
+  .works_category_title {
   font-size: var(--text-medium);
 }
 
 .works
   .works_content
-  .works_categories_list
-  .works_categories_item
-  .works_categories_item_list {
+  .works_list
+  .works_category
+  .works_category_list
+{
   margin-top: 20px;
 }
 
-.works
-  .works_content
-  .works_categories_list
-  .works_categories_item
-  .works_web_design_list,
-  .works_app_design_list,
-  .works_front_end_list,
-  .works_graphic_design_list {
+/* WORK */
+.work 
+{
+  padding-block: 150px;
+}
+
+.work .work_content .work_list 
+{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px 20px;
-}
-
-.works
-  .works_content
-  .works_categories_list
-  .works_categories_item
-  .works_categories_item_list
-  .works_categories_item_list_item
-  .works_categories_item_list_item_title {
-  font-size: var(--text-small);
-  margin-top: 10px;
-}
-
-.works
-  .works_content
-  .works_categories_list
-  .works_categories_item
-  .works_categories_item_list
-  .works_categories_item_list_item
-  .works_categories_item_list_item_p {
-  font-size: var(--text-small);
-  color: var(--color3);
-}
-
-.works
-  .works_content
-  .works_categories_list
-  .works_categories_item
-  .works_categories_item_list
-  .works_categories_item_list_item
-  .view_work_link {
-  color: var(--color1);
-  font-size: var(--text-small);
-  font-weight: var(--bold);
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.works
-  .works_content
-  .works_categories_list
-  .works_categories_item
-  .see_more_link {
-  color: var(--color1);
-  font-size: var(--text-small);
-  font-weight: var(--bold);
   margin-top: 20px;
-  float: right;
 }
 
 /* ABOUT ME */
@@ -447,14 +408,9 @@ hr {
     position: absolute;
   }
 
-  .works
-    .works_content
-    .works_categories_list
-    .works_categories_item
-    .works_web_design_list,
-    .works_app_design_list,
-    .works_front_end_list,
-    .works_graphic_design_list {
+  .work
+    .work_content
+    .work_list {
     grid-template-columns: 1fr;
   }
 
